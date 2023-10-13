@@ -1,6 +1,14 @@
 # radius-mac
 A simple RADIUS server for MAC-authentication.
 
+## Docker
+A docker image has been created based on alpine:3.18
+
+[Example of config.ini](https://github.com/jcbshw/radius-mac/blob/master/config.ini)
+
+```
+docker run -d -p 1812:1812/udp -v ./config.ini:/etc/radius-mac/config.ini ghcr.io/jcbshw/radius-mac:latest
+```
 ## Build
 
 ```
